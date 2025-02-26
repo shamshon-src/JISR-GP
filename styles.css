@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'TheYearOfTheCamel';
+    src: url('fonts/TheYearofTheCamel-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+font-family: 'TheYearOfTheCamel', sans-serif;;
+background-color: #f9f3e7;
+background-size: cover;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+height: 100vh;
+direction: rtl; /* تأكيد الاتجاه من اليمين لليسار */
+}
+
+.container {
+display: flex;
+justify-content: space-between; /* توزيع المسافة بين العناصر */
+width: 100%;
+padding: 0 10px; /* تقليل المسافة بين العناصر من الجانبين */
+}
+
+.form-section {
+border-radius: 15px;
+padding: 20px;
+width: 45%;  /* تقليص عرض النموذج */
+max-width: 500px;
+position: relative;
+margin-right: 20px;  /* إضافة مسافة صغيرة بين النموذج والصورة */
+}
+
+.form-section h2 {
+margin-bottom: 10px;
+color: #63483b;
+text-align: center; 
+font-size: 35px;  /* تقليل حجم العنوان */
+}
+
+.form-section p {
+margin-bottom: 20px;
+color: #8d6e63;
+font-size: 20px;  /* تقليل حجم النص */
+text-align: center;  
+}
+
+.form-section form {
+display: flex;
+flex-direction: column;
+gap: 15px;
+text-align: right; 
+}
+
+input, textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #ddd;
+background-color: #fdfbfbcf;
+border-radius: 15px;   
+font-size: 14px;
+box-sizing: border-box;
+margin-bottom: 20px;  /* تقليل المسافة بين الحقول */
+}
+
+textarea {
+resize: none;
+height: 100px;  /* تقليل ارتفاع مربع النص */
+}
+
+.role-options {
+display: flex;
+color: #63483b;
+align-items: center; /* محاذاة النص وزر الراديو في نفس المستوى */
+gap: 120px; /* مسافة بين المجموعتين فقط (الأزرار والنصوص) */
+direction: rtl; /* تأكيد الاتجاه من اليمين إلى اليسار */
+}
+
+.role-options label {
+
+align-items: center; /* جعل النص وزر الراديو على نفس الخط */
+gap: 5px; /* تقليل المسافة بين النص وزر الراديو */
+margin: 0; /* إزالة أي هوامش افتراضية */
+}
+
+.error-message {
+color: red;
+font-size: 12px;
+display: none;
+margin-top: -15px;
+margin-bottom: 15px;
+}
+
+.account {
+font-size: 12px;
+text-align: right; 
+}
+
+button {
+background-color: #785d50;
+color: #ffffff;
+width: 100%;
+padding: 10px;
+border: none;
+border-radius: 15px;
+font-size: 16px;
+margin: 10px 0;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+button:hover {
+background-color: #63483b;
+}
+
+.left-section {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 50%; /* زيادة عرض القسم الأيسر */
+margin-left: -10px; /* تقليل المسافة بين الصورة والنموذج */
+}
+/*المسافه يبي لها تقصير بين الصوره والنموذج !!!!*/
+.left-section img {
+width: 100%; /* جعل الصورة تشغل عرض القسم بالكامل */
+max-width: 500px; /* السماح بحجم أكبر للصورة */
+border-radius: 15px; 
+transition: transform 0.3s ease-in-out;
+}
